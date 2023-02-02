@@ -1,0 +1,486 @@
+body{
+    background: linear-gradient(#181c30,#616066);
+    margin: 0;    
+}
+
+/*-------------HTML INDEX // GENERAL --------------------------*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.ul1{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    padding-right: 40px;
+}
+
+.li1{
+    background-color:  aliceblue;
+    height: 2.4em;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    box-shadow: 2px 3px 1px black;
+    border-radius: 10px;
+    font-weight: 100;
+}
+
+/*----- ANIMACION BOTONES -------*/
+.li1:active{
+     box-shadow: 0px 0px 0px black;
+     transform: translate(2px,2px);
+ }
+
+.a1{
+    text-decoration: none;   
+    color: black; 
+    font-family: 'Montserrat', sans-serif;   
+    font-weight: 100;
+}
+
+.primeroAzul{
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: initial;  
+    animation-fill-mode: forwards;  
+}
+
+.segundoCeleste{
+    animation-name: logo2;
+    animation-duration: 3s;
+    animation-iteration-count: initial;  
+    animation-fill-mode: forwards; 
+}  
+
+@keyframes logo{    
+   0%{
+    transform:translate(0px,-30px);
+    opacity: 0;
+   } 
+   25%{
+    transform:translate(0px,-20px);
+    opacity: 0.3;
+   }  
+   100%{
+      transform:translate(0px,0px);
+      opacity: 1;
+   }
+}
+
+@keyframes logo2{    
+    0%{
+      transform:translate(0px,-60px);
+     /*transform:translate(0px,-30px);*/
+     opacity: 0;
+    } 
+    25%{
+     transform:translate(0px,-40px);
+     /*transform:translate(0px,-20px);*/
+     opacity: 0;
+    }  
+    100%{
+       transform:translate(0px,0px);
+       opacity: 1;
+    }
+}
+
+/*--------HEADER-------------*/
+
+.contHeader{
+    background: url(./imagenes/codigo.jpg) 50% 0 fixed;
+    background-size: 100%;
+    width: 100%;   
+    height: 31em;   
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+}
+
+.classP{
+   
+    color: aliceblue;     
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;         
+    font-weight: 600;
+    text-shadow: 3px 4px 2px black;
+    
+}
+
+
+/*-------SECTION-----------*/
+
+.section1{
+    display: flex;
+    justify-content: center;
+}
+   
+h1{
+    color: aliceblue;
+    font-size: 2.5em; 
+    text-shadow:2px 2px 1px rgb(45,45,45);
+}
+
+/*-------MAIN----------*/
+
+ .ul2{
+    margin: 10em;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    height: 25em;
+}
+
+.li2{
+    background-color:aliceblue;
+    border: 5px solid #181c30; 
+}
+
+.t1{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+   width: 350px;
+   height: 230px;
+}
+
+p{  
+    font-size: 1.2em;
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.a2{
+    text-decoration: none;
+    background-color: #181c30;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: aliceblue;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    box-shadow:2px 3px 1px rgb(45,45,45);
+  
+}
+
+
+/*--------ANIMACION BOTONES----------*/
+
+.a2:active{
+    box-shadow: 0px 0px 0px black;
+    transform: translate(2px,2px);
+}
+
+.CajaA{
+    padding-left: 6em;
+    padding-right: 6em;
+ 
+}
+
+
+/*FOOTER*/
+.footer{
+    background-color:rgb(45,45,45) ;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+  
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+
+}
+
+.cajaF{
+    display:flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 80px;
+    
+    
+}
+.cajaFoter1{
+    padding: 30px;
+   
+
+}
+
+.cajaFoter2{
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cajaFoter3{
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-left: 40em;
+    margin-bottom: 22px;
+}
+
+
+
+
+/*-------------HTML HISTORIA -----------------*/
+
+.cajaPadre{
+    display: flex;
+    margin-top: 120px;
+    align-items:flex-end;
+    
+}
+
+.cajaHijo1{
+    color: rgb(240,245,228);
+    width: 60%;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+ 
+.cajaHijo2{
+    color: black;
+    width: 40%;
+}
+
+.cajaHijo11{
+    color: rgb(240,245,228);
+    width: 50%;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 35px;
+    text-shadow: 1px 1px 2px black;
+}
+ 
+.cajaHijo22{
+    color: black;
+    width: 50%;
+    padding-left: 25px;
+}
+
+.pp1{
+    text-align: left;
+    color: aliceblue;
+}
+
+.cajaPadre2{
+    display: flex;
+    margin-top: 120px;
+    align-items:center;  
+}
+
+.cajaHijo111{
+    color: rgb(240,245,228);
+    width: 30%;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+ 
+.cajaHijo222{
+    color: black;
+    width: 65%;    
+}
+
+.cajonPadreVideo{
+    padding: 13em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;     
+}
+
+.tituloVideo{
+    display:flex;
+    justify-content: center;
+    color: rgb(240,245,228);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/*-------------VIDEO---------------*/
+.cajaVideo{
+    background-color:black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60em;
+}
+
+.video1{
+    width: 60em;
+}
+
+.contenedorBotones{
+    background-color:rgb(45,45,45);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 60em;
+    height: 3.5em;
+}
+
+.botonPlay{
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px rgb(66,126,128);
+    margin-left: 5px;
+}
+
+.botonPausa{
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px rgb(66,126,128);
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.duracionVideo{
+    color: rgb(240,245,228);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-left: 550px;
+    margin-bottom: 20px;
+}   
+
+/*-------- BOTONES DEL VIDEO -----------*/
+.botonPlay:active{
+    box-shadow: 0px 0px 0px black;
+    transform: translate(2px,2px);
+}
+
+.botonPausa:active{
+    box-shadow: 0px 0px 0px black;
+    transform: translate(2px,2px);
+}
+
+.footerHistoria{
+     background-color:rgb(45,45,45) ;
+     height: 80px;
+     display: flex;   
+     align-items: center; 
+     margin-top: 6em;
+ }
+
+.caja1FoterHistoria{
+    height: 80px;
+    width: 150px;
+    display: flex;
+    align-items: center;    
+}
+
+.imagenLogo{
+    height: 4em;
+} 
+
+.caja2FoterHistoria{
+     color: aliceblue;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 12px;
+     font-weight: 700; 
+     margin-left: 70px;
+ }
+
+.caja3FoterHistoria{
+     color: aliceblue;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 14px;
+     margin-left: 38em;
+     margin-bottom: 22px;
+ }
+
+
+
+
+/* ----------- HTML JUGUEMOS --------------------------*/
+
+.sectionJuguemos{
+      display:flex;
+      justify-content: center;
+      color: rgb(240,245,228);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 33px;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px black;
+      padding-top: 1.5em;
+}
+
+.portaTarjetas{
+    display: flex;
+    justify-content: center;    
+}
+
+.zonaDestino{
+    border: 2px solid black;
+    width: 275px;
+    height: 395px;
+    background-color: rgb(128,128,128);    
+}
+
+.textoCajasJuguemos{
+     font-family: 'Montserrat', sans-serif;
+     font-size: 16px;
+     margin-top: 20px;
+}
+
+.portaImagenes{
+    display: flex;
+    justify-content: center;
+    margin-top:35px;
+}
+
+#imagenes{
+    width: 275px;
+    height: 395px;
+   /* padding: 5px*/
+   /* margin-top: 30px;*/
+}
+
+.portaBotonReinicio{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.botonReinicio{
+    text-decoration: none;
+    background-color:  aliceblue;
+    margin-top: 30px;
+    border: 2px solid black;
+    color: rgb(45,45,45);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    width: 250px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px  rgb(21,68,84);
+}
+
